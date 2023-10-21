@@ -1,0 +1,45 @@
+@import "mentor/dsfr";
+@import "mentor/variables";
+@import "mentor/main";
+@import "mentor/fonts";
+@import "mentor/tabs";
+@import "mentor/form";
+@import "mentor/header";
+@import "mentor/footer";
+@import "mentor/drawer";
+@import "mentor/popup";
+@import "mentor/block";
+@import "mentor/course";
+@import "mentor/my";
+@import "mentor/atto_templates";
+@import "mentor/login";
+@import "mentor/signup";
+@import "mentor/admin";
+@import "mentor/activities";
+@import "mentor/user";
+@import "mentor/datatable";
+
+// Activities
+@import "mentor/mod_assign";
+@import "mentor/mod_choice";
+@import "mentor/mod_customcert";
+@import "mentor/mod_data";
+@import "mentor/mod_forum";
+@import "mentor/mod_questionnaire";
+@import "mentor/mod_quiz";
+@import "mentor/mod_scorm";
+@import "mentor/mod_wiki";
+@import "mentor/mod_glossary";
+
+// Blocks
+@import "mentor/block_completion_progress";
+@import "mentor/block_summary";
+@import "mentor/block_calendar_upcoming";
+
+// Formats
+@import "mentor/format_buttons";
+@import "mentor/format_tiles";
+@import "mentor/format_topics";
+
+// Other plugins
+@import "mentor/local_staticpages";
