@@ -1,0 +1,40 @@
+.navbar.navbar-light {
+    height: 102px;
+    max-height: 102px;
+    box-shadow: var(--raised-shadow);
+    .navbar-nav .nav-link,
+    .userbutton {
+        color: var(--text-action-high-blue-france) !important;
+        font-size: 14px;
+        font-family: 'Marianne Medium', Arial, sans-serif;
+        &:hover {
+            background-color: var(--background-default-grey-hover);
+        }
+    }
+    .popover-region-toggle {
+        width: auto;
+    }
+    .usermenu {
+        .userbutton {
+            display: flex;
+            position: relative;
+            align-items: center;
+            padding-left: 0.75rem;
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .caret {
+            display: none;
+        }
+        .userpicture {
+            margin-right: 0;
+        }
+    }
+    .navbar-inner {
+        max-width: var(--max-page-width);
+        flex: 1 1 auto;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}

@@ -18,7 +18,7 @@
  * Privacy Subsystem implementation for theme_mentor.
  *
  * @package    theme_mentor
- * @copyright  2018 Marina Glancy
+ * @copyright  2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -29,7 +29,7 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * The arup theme does not store any data.
  *
- * @copyright  2018 Marina Glancy
+ * @copyright  2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements \core_privacy\local\metadata\null_provider {

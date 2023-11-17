@@ -27,3 +27,35 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mentor';
 $string['choosereadme'] = 'Theme Mentor is a child theme of Boost.';
+
+// Login stuff
+$string['usernameemail_help'] = 'Expected format: name@domain.com';
+$string['cookiesnotice'] = 'Cookies notice';
+$string['showpassword'] = 'Show';
+$string['footerlogotitle'] = 'Site of the Ministry of Transformation and Public Service';
+
+// Settings
+$string['about_desc'] = 'Link to the "Learn more" page';
+$string['about'] = 'Learn more';
+$string['accessibility_desc'] = 'Link to the "Accessibility" page';
+$string['accessibility'] = 'Accessibility: partially compliant';
+$string['externallinks_desc'] = 'External links to Mentor';
+$string['externallinks'] = 'External links';
+$string['faq_desc'] = 'Link to the "FAQ" page';
+$string['faq'] = 'FAQ';
+$string['legalnotice_desc'] = 'Link to the "Legal notice" page';
+$string['legalnotice'] = 'Legal notice';
+$string['mentorlicence_desc'] = 'Defined license';
+$string['mentorlicence'] = 'License';
+$string['mentorlicencedefault'] = 'Unless otherwise stated, all content on this site is under <a href="https://www.etalab.gouv.fr/" target="_blank"> etalab license - 2.0 </a>';
+$string['personaldata_desc'] = 'Link to the "Personal data" page';
+$string['personaldata'] = 'Personal data';
+$string['sitemap_desc'] = 'Link to the "Site map" page';
+$string['sitemap'] = 'Site map';
+$string['textinfofooter_desc'] = 'Information at the beginning of the footer';
+$string['textinfofooter'] = 'Information';
+$string['textinfofooterdefault'] = 'The Mentor program is carried by the General Directorate of Administration and Public Service (DGAFP)';
+$string['versionnumber_desc'] = 'Version of the Mentor project. This field is usually filled in automatically.';
+$string['versionnumber'] = 'Version of the Mentor project';
+
+$string['contact'] = 'Contact';

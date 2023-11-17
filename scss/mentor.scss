@@ -4,20 +4,20 @@
 @import "mentor/fonts";
 @import "mentor/tabs";
 @import "mentor/form";
-@import "mentor/header";
-@import "mentor/footer";
-@import "mentor/drawer";
+// @import "mentor/header";
+// @import "mentor/footer";
+// @import "mentor/drawer";
 @import "mentor/popup";
-@import "mentor/block";
-@import "mentor/course";
+// @import "mentor/block";
+// @import "mentor/course";
 @import "mentor/my";
-@import "mentor/atto_templates";
-@import "mentor/login";
-@import "mentor/signup";
-@import "mentor/admin";
-@import "mentor/activities";
-@import "mentor/user";
-@import "mentor/datatable";
+// @import "mentor/atto_templates";
+// @import "mentor/login";
+// @import "mentor/signup";
+// @import "mentor/admin";
+//@import "mentor/activities";
+// @import "mentor/user";
+//@import "mentor/datatable";
 
 // Activities
 @import "mentor/mod_assign";
@@ -43,3 +43,5 @@
 
 // Other plugins
 @import "mentor/local_staticpages";
+
+// @import "dev/dev";

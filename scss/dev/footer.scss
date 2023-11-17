@@ -1,0 +1,183 @@
+#page-footer {
+    #footer-content {
+        max-width: var(--max-page-width);
+        margin: 2rem auto;
+        font-size: 14px;
+    }
+}
+
+#page-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: var(--text-label-grey);
+    border-top: 2px solid var(--border-plain-blue-france);
+    font-size: 14px;
+
+    .footer-inner {
+        max-width: var(--max-page-width);
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .start-footer {
+        background-color: var(--background-alt-grey);
+    }
+
+    .linkcontainer {
+        flex: 0 0 50%;
+    }
+
+    #footer-logo {
+
+        a {
+            display: block;
+            padding-right: 10px;
+            align-self: flex-start;
+
+            &:focus {
+                box-shadow: none;
+                background: none;
+                outline: none;
+            }
+
+            & > img {
+                width: 255px;
+                height: 174px;
+
+                @media(max-width: 1300px) {
+                    width: 192px;
+                    height: 130px;
+                    padding-top: 15px;
+                }
+
+                @media(max-width: 1090px) {
+                    width: 220px;
+                    height: 150px;
+                }
+            }
+        }
+
+        .european-logo {
+            height: 60px;
+            display: flex;
+
+            .icon {
+                height: 60px;
+                width: auto;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .footer-link,
+    .tool_dataprivacy,
+    .purgecaches {
+        a {
+            font-size: 12px;
+            color: var(--text-label-grey);
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                outline: none;
+                color: var(--text-label-grey);
+                box-shadow: 0 0.15rem var(--text-label-grey);
+            }
+        }
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+    .tool_dataprivacy,
+    .purgecaches {
+        margin-bottom: 1rem;
+    }
+    .footer-link.horizontal {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        li {
+            font-weight: bold;
+            list-style-type: none;
+            margin: 0.5rem 1.5rem 0.5rem 0;
+            white-space: nowrap;
+        }
+    }
+
+    #text-info {
+        margin-bottom: 13px;
+        font-size: 16px;
+    }
+
+
+    #break-line-footer {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid var(--border-default-grey);
+        margin: 31px 0 16px 0;
+        padding: 0;
+    }
+
+    #last-part-footer {
+        display: flex;
+        justify-content: space-between;
+        color: #6a6a6a;
+        font-size: 12px;
+
+        @media(max-width: 1500px) {
+            flex-direction: column;
+        }
+
+        .pipe-list {
+            ul {
+                list-style-type: none;
+                position: relative;
+                padding: 0;
+                margin-bottom: 0;
+
+                li {
+                    display: inline-block;
+                    line-height: 1;
+                    padding-right: 1em;
+                    margin-right: 1em;
+                    border-right: 1px solid;
+                    margin-bottom: 0;
+                    &:last-child {
+                        border-right: none;
+                        padding-right: 0;
+                        margin-right: 0;
+                    }
+                    a {
+                        color: #6a6a6a;
+                        text-decoration: none;
+
+                        &:focus {
+                            outline: none;
+                            color: #6a6a6a;
+                            background-color: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cachesused th {
+        background-color: inherit !important;
+    }
+
+    #licence-text {
+        margin: 0;
+        padding: 0;
+        a {
+            color: #6a6a6a;
+        }
+    }
+}

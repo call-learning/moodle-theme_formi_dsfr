@@ -106,23 +106,6 @@ if ($ADMIN->fulltree) {
             PARAM_URL
     );
 
-    // Personal data link.
-    $personaldatasetting = new admin_setting_configtext(
-            'theme_mentor/personaldata',
-            get_string('personaldata', 'theme_mentor'),
-            get_string('personaldata_desc', 'theme_mentor'),
-            $CFG->wwwroot . '/local/staticpage/view.php?page=donneespersonnelles',
-            PARAM_URL
-    );
-
-    // Plugin agent connect identifier.
-    $agentconnectidentifiersetting = new admin_setting_configtext(
-            'theme_mentor/agentconnectidentifier',
-            get_string('agentconnectidentifier', 'theme_mentor'),
-            get_string('agentconnectidentifier_desc', 'theme_mentor'),
-            'oauth2',
-            PARAM_TEXT
-    );
 
     $settings->add($textinfofootersetting);
     $settings->add($aboutsetting);
@@ -133,6 +116,4 @@ if ($ADMIN->fulltree) {
     $settings->add($mentorlicencesetting);
     $settings->add($sitemapsetting);
     $settings->add($accessibilitysetting);
-    $settings->add($personaldatasetting);
-    $settings->add($agentconnectidentifiersetting);
 }
