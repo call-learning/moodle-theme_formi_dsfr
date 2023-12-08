@@ -26,7 +26,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_formi_dsfr';
 $plugin->release = '1.0.0';
-$plugin->version = 2022052700;
+$plugin->version = 2023120800;
 $plugin->requires = 2018051700;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = array(

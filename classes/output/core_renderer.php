@@ -195,4 +195,44 @@ class core_renderer extends \theme_boost\output\core_renderer {
         return false;
     }
 
+    /**
+     * Get the footer logo class
+     * @return string classname for the footer logo.
+     */
+    public function footerlogoclass() {
+        $theme = \theme_config::load('formi_dsfr');
+        if ($image = $theme->setting_file_url('footerlogo', 'footerlogo')) {
+            return 'footer-logo';
+        } else {
+            return 'footer-logo-default';
+        }
+    }
+
+    /**
+     * Get the footer logo
+     *
+     * @return string url containing the footer logo.
+     */
+    public function footerlogo() {
+        $theme = \theme_config::load('formi_dsfr');
+        if ($image = $theme->setting_file_url('footerlogo', 'footerlogo')) {
+            return $image;
+        } else {
+            return $this->image_url('logo-footer', 'theme_formi_dsfr');
+        }
+    }
+
+    /**
+     * Get the footer logo2
+     *
+     * @return string url containing the footer logo.
+     */
+    public function footerlogo2() {
+        $theme = \theme_config::load('formi_dsfr');
+        if ($image = $theme->setting_file_url('footerlogo2', 'footerlogo2')) {
+            return $image;
+        } else {
+            return $this->image_url('logo-footer2', 'theme_formi_dsfr');
+        }
+    }
 }

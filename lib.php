@@ -56,3 +56,28 @@ function theme_formi_dsfr_get_precompiled_css() {
     global $CFG;
     return file_get_contents($CFG->dirroot . '/theme/formi_dsfr/style/moodle.css');
 }
+
+/**
+ * Serves any files associated with the theme settings.
+ *
+ * @param stdClass $course
+ * @param stdClass $cm
+ * @param context $context
+ * @param string $filearea
+ * @param array $args
+ * @param bool $forcedownload
+ * @param array $options
+ * @return bool
+ */
+function theme_formi_dsfr_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+    if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'footerlogo' || $filearea === 'footerlogo2')) {
+        $theme = theme_config::load('formi_dsfr');
+        // By default, theme files must be cache-able by both browsers and proxies.
+        if (!array_key_exists('cacheability', $options)) {
+            $options['cacheability'] = 'public';
+        }
+        return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
+    } else {
+        send_file_not_found();
+    }
+}

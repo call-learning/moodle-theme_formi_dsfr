@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A two column layout for the boost theme.
+ * A two column layout for the formi_dsfr theme.
  *
  * @package   theme_boost
- * @copyright 2016 Damyon Wiese
+ * @copyright  2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

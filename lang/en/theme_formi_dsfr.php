@@ -32,7 +32,12 @@ $string['choosereadme'] = 'Theme Formi Dsfr is a child theme of Boost.';
 $string['usernameemail_help'] = 'Expected format: name@domain.com';
 $string['cookiesnotice'] = 'Cookies notice';
 $string['showpassword'] = 'Show';
-$string['footerlogotitle'] = 'Site of the Ministry of Transformation and Public Service';
+
+// Footer logo strings
+$string['footerlogotitle'] = 'Site of the Ministry of the Interior and Overseas';
+$string['footerlogo2title'] = 'SDFR Digital Laboratory - Design and distribution of digital training Formi, ' .
+'online training platform Audio and video captions Pedagogical Films and animations';
+
 
 // Settings
 $string['about_desc'] = 'Link to the "Learn more" page';
@@ -45,6 +50,10 @@ $string['faq_desc'] = 'Link to the "FAQ" page';
 $string['faq'] = 'FAQ';
 $string['legalnotice_desc'] = 'Link to the "Legal notice" page';
 $string['legalnotice'] = 'Legal notice';
+$string['footerlogo'] = 'Footer logo left';
+$string['footerlogo2'] = 'Footer logo right';
+$string['footerlogo_desc'] = 'Footer logo left';
+$string['footerlogo2_desc'] = 'Footer logo right';
 $string['formi_dsfrlicence_desc'] = 'Defined license';
 $string['formi_dsfrlicence'] = 'License';
 $string['formi_dsfrlicencedefault'] = 'Unless otherwise stated, all content on this site is under <a href="https://www.etalab.gouv.fr/" target="_blank"> etalab license - 2.0 </a>';

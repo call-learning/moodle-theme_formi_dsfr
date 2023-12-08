@@ -16,7 +16,7 @@
 
 /**
  * @package   theme_formi_dsfr
- * @copyright 2021 Edunao SAS (contact@edunao.com)
+ * @copyright   2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @author    mounir <mounir.ganem@edunao.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -106,6 +106,30 @@ if ($ADMIN->fulltree) {
             PARAM_URL
     );
 
+    // Footer logo left
+    $footerlogo = new admin_setting_configstoredfile(
+            'theme_formi_dsfr/footerlogo',
+            get_string('footerlogo', 'theme_formi_dsfr'),
+            get_string('footerlogo_desc', 'theme_formi_dsfr'),
+            'footerlogo'
+    );
+
+    // Footer logo left
+    $footerlogo = new admin_setting_configstoredfile(
+        'theme_formi_dsfr/footerlogo',
+        get_string('footerlogo', 'theme_formi_dsfr'),
+        get_string('footerlogo_desc', 'theme_formi_dsfr'),
+        'footerlogo'
+    );
+
+        // Footer logo right
+    $footerlogo2 = new admin_setting_configstoredfile(
+        'theme_formi_dsfr/footerlogo2',
+        get_string('footerlogo2', 'theme_formi_dsfr'),
+        get_string('footerlogo2_desc', 'theme_formi_dsfr'),
+        'footerlogo2'
+    );
+
 
     $settings->add($textinfofootersetting);
     $settings->add($aboutsetting);
@@ -116,4 +140,6 @@ if ($ADMIN->fulltree) {
     $settings->add($formi_dsfrlicencesetting);
     $settings->add($sitemapsetting);
     $settings->add($accessibilitysetting);
+    $settings->add($footerlogo);
+    $settings->add($footerlogo2);
 }
