@@ -1,0 +1,134 @@
+// Bootstrap variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #8f959e !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #0f6fc5 !default;
+$indigo:  #6610f2 !default;
+$purple:  #613d7c !default;
+$pink:    #e83e8c !default;
+$red:     #ca3120 !default;
+$orange:  #f0ad4e !default;
+$yellow:  #ff7518 !default;
+$green:   #357a32 !default;
+$teal:    #20c997 !default;
+$cyan:    #008196 !default;
+
+$primary:       $blue !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$secondary:     $gray-400 !default;
+
+$info-outline:    #1f7e9a;
+$warning-outline: #a6670e;
+
+// Options
+$enable-rounded: false !default;
+$enable-responsive-font-sizes: true !default;
+
+// Body
+$body-color:    $gray-900 !default;
+
+// Fonts
+$font-size-base: 0.9375rem !default;
+$rfs-base-font-size: 0.9rem !default;
+$headings-font-weight:   300 !default;
+
+// Navbar
+$navbar-dark-hover-color:           rgba($white, 1) !default;
+$navbar-light-color:                rgba($black, 0.6) !default;
+$navbar-light-hover-color:          rgba($black, .9) !default;
+
+// Breadcrumbs
+$breadcrumb-padding-y:              .25rem !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-item-padding:           .5rem !default;
+$breadcrumb-margin-bottom:          0 !default;
+$breadcrumb-bg:                     transparent !default;
+$breadcrumb-divider: "/" !default;
+$breadcrumb-divider-rtl: "/" !default;
+
+// Floating elements positions
+$gototop-bottom-position: 50px !default;
+
+// Alerts
+$alert-border-width:                0 !default;
+
+$card-group-margin: .25rem;
+
+// Custom control size
+$custom-control-indicator-size: 1.25rem;
+
+$input-btn-focus-color: rgba(0, 123, 255d, .25) !default;
+
+$input-border-color: $gray-500 !default;
+
+// $dropdown-link-hover-color: $white;
+// $dropdown-link-hover-bg: $primary;
+
+// stylelint-disable
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+), $theme-colors);
+// stylelint-enable
+
+
+$font-family-base: 'Marianne', Arial, sans-serif !default;
+$font-family-sans-serif: $font-family-base !default;
+
+$navbar-height: 102px;
+
+$link-color: #000091;
+$link-hover-color: #0056b3;
+
+:root {
+    --background-action-high-blue-france: #000091;
+    --background-action-high-blue-france-hover: #1212ff;
+    --background-active-blue-france: #000091;
+    --background-alt-grey: #f6f6f6;
+    --background-contrast-grey: #eee;
+    --background-default-grey-hover: #f6f6f6;
+    --background-flat-error: #ce0500;
+    --background-open-blue-france: #e3e3fd;
+    --background-open-blue-france-hover: #c1c1fb;
+    --border-action-high-blue-france: #000091;
+    --border-active-blue-france: #000091;
+    --border-default-grey: #ddd;
+    --border-plain-blue-france: #000091;
+    --border-plain-error: #ce0500;
+    --border-plain-warning: #b34000;
+    --border-plain-success: #18753c;
+    --border-plain-info: #0063cb;
+    --border-plain-grey: #3a3a3a;
+    --grey-1000-100-hover: #f6f6f6;
+    --grey-1000-75-hover: #f6f6f6;
+    --max-page-width: 78rem;
+    --shadow-color: rgba(0, 0, 18, 0.16);
+    --raised-shadow:  0 1px 3px var(--shadow-color);
+    --text-action-high-blue-france: #000091;
+    --text-default-error: #ce0500;
+    --text-default-grey: #3a3a3a;
+    --text-active-grey: #161616;
+    --text-mention-grey: #666666;
+    --text-inverted-blue-france: #f5f5fe;
+    --text-label-grey:#161616;
+    --text-title-grey: #161616;
+    --underline-hover-width: 0;
+    --underline-max-width: 100%;
+}

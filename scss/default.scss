@@ -1,11 +1,13 @@
 // arup
-@import "mentor/variables";
 
 // Import FontAwesome.
 @import "fontawesome";
 
 // Import Fonts.
-@import "mentor/fonts";
+@import "design/fonts";
+
+// Import this theme's variables.
+@import "design/variables";
 
 // Import All of Bootstrap
 @import "bootstrap";
@@ -13,6 +15,6 @@
 // Import Core moodle CSS
 @import "moodle";
 
-// Import Mentor CSS
-@import "mentor"
+// Import Formi Dsfr CSS
+@import "design/combined"
 

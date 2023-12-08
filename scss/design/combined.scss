@@ -1,0 +1,39 @@
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+body.pagelayout-admin {
+    --max-page-width: 99rem;
+}
+
+body.path-login {
+    --max-page-width: 100%;
+}
+
+body {
+    @import "headings";
+    @import "layout";
+    @import "course";
+    @import "login";
+    @import "navdrawer";
+    @import "navbar";
+    @import "footer";
+    @import "components";
+    @import "forms";
+    @import "tabs";
+    @import "mod_quiz";
+}
+
+.block,
+.block.card {
+    border-radius: 0;
+    border: 1px solid var(--border-default-grey);
+    h2, h4, h5 {
+        line-height: 24px;
+        font-size: 20px;
+    }
+}

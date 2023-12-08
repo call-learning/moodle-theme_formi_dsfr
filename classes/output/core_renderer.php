@@ -17,12 +17,12 @@
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
  *
- * @package    theme_mentor
+ * @package    theme_formi_dsfr
  * @copyright  2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_mentor\output;
+namespace theme_formi_dsfr\output;
 
 defined('MOODLE_INTERNAL') || die;
 
@@ -30,7 +30,7 @@ use moodle_url;
 /**
  * Theme renderer
  *
- * @package    theme_mentor
+ * @package    theme_formi_dsfr
  * @copyright  2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -43,19 +43,6 @@ class core_renderer extends \theme_boost\output\core_renderer {
     public function root_url() {
         return new moodle_url('/');
     }
-
-    /**
-     * Adds the refreshcss link to the page
-     * @return string
-     */
-    public function standard_top_of_body_html() {
-        $html = parent::standard_top_of_body_html();
-        $html .= '<div class="devcss">
-                    <a href="#" data-action="refreshcss">refreshcss</a>
-                </div>';
-        return $html;
-    }
-
 
     /**
      * Get the entity contact page link
@@ -75,7 +62,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function textinfofooter_page() {
-        return get_config('theme_mentor', 'textinfofooter');
+        return get_config('theme_formi_dsfr', 'textinfofooter');
     }
 
     /**
@@ -85,7 +72,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function about_page() {
-        return get_config('theme_mentor', 'about');
+        return get_config('theme_formi_dsfr', 'about');
     }
 
     /**
@@ -95,7 +82,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function legalnotice_page() {
-        return get_config('theme_mentor', 'legalnotice');
+        return get_config('theme_formi_dsfr', 'legalnotice');
     }
 
     /**
@@ -105,11 +92,11 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function faq_page() {
-        return get_config('theme_mentor', 'faq');
+        return get_config('theme_formi_dsfr', 'faq');
     }
 
     /**
-     * Get Mentor version number, if set.
+     * Get Formi Dsfr version number, if set.
      *
      * @return false|string|null
      * @throws coding_exception
@@ -118,17 +105,17 @@ class core_renderer extends \theme_boost\output\core_renderer {
      */
     public function versionnumber_page() {
 
-        return get_config('theme_mentor', 'versionnumber');
+        return get_config('theme_formi_dsfr', 'versionnumber');
     }
 
     /**
-     * Get Mentor licence, if set.
+     * Get Formi Dsfr licence, if set.
      *
      * @return false|string|null
      * @throws dml_exception
      */
-    public function mentorlicence_page() {
-        return get_config('theme_mentor', 'mentorlicence');
+    public function formi_dsfrlicence_page() {
+        return get_config('theme_formi_dsfr', 'formi_dsfrlicence');
     }
 
     /**
@@ -138,7 +125,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function externallink_page() {
-        return explode("|", get_config('theme_mentor', 'externallinks'));
+        return explode("|", get_config('theme_formi_dsfr', 'externallinks'));
     }
 
     /**
@@ -148,7 +135,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function sitemap_page() {
-        return get_config('theme_mentor', 'sitemap');
+        return get_config('theme_formi_dsfr', 'sitemap');
     }
 
     /**
@@ -158,7 +145,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function accessibility_page() {
-        return get_config('theme_mentor', 'accessibility');
+        return get_config('theme_formi_dsfr', 'accessibility');
     }
 
     /**
@@ -168,7 +155,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws dml_exception
      */
     public function personaldata_page() {
-        return get_config('theme_mentor', 'personaldata');
+        return get_config('theme_formi_dsfr', 'personaldata');
     }
 
     /**
@@ -186,6 +173,26 @@ class core_renderer extends \theme_boost\output\core_renderer {
      */
     public function islogged_page() {
         return isloggedin();
+    }
+
+    /**
+     * Get the first navbar collection label
+     */
+    public function firstcollectionlabel() {
+        if ($this->page->pagelayout == 'course') {
+            return get_string('course');
+        }
+        return $this->page->flatnav->get_collectionlabel();
+    }
+
+    /**
+     * Get the active navbar section
+     */
+    public function adminsectionactive() {
+        if ($this->page->pagelayout == 'admin') {
+            return true;
+        }
+        return false;
     }
 
 }

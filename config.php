@@ -15,16 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The configuration for theme_mentor is defined here.
+ * The configuration for theme_formi_dsfr is defined here.
  *
- * @package     theme_mentor
+ * @package     theme_formi_dsfr
  * @copyright   2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$THEME->name = 'mentor';
+$THEME->name = 'formi_dsfr';
 
 $THEME->doctype = 'html5';
 
@@ -34,14 +34,14 @@ $THEME->parents = array(
 
 $THEME->sheets = [];
 $THEME->scss = function($theme) {
-    return theme_mentor_get_main_scss_content($theme);
+    return theme_formi_dsfr_get_main_scss_content($theme);
 };
 $THEME->editor_sheets = [];
 $THEME->usefallback = true;
 
 $THEME->enable_dock = false;
-$THEME->extrascsscallback = 'theme_mentor_get_extra_scss';
-$THEME->precompiledcsscallback = 'theme_mentor_get_precompiled_css';
+$THEME->extrascsscallback = 'theme_formi_dsfr_get_extra_scss';
+$THEME->precompiledcsscallback = 'theme_formi_dsfr_get_precompiled_css';
 $THEME->yuicssmodules = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->requiredblocks = '';

@@ -22,44 +22,6 @@
 <head>
     <title>{{{ output.page_title }}}</title>
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
-    <link rel="stylesheet" data-region="devcss" href="{{{output.root_url}}}/theme/mentor/scss/dev/styles.css" />
     {{{ output.standard_head_html }}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-{{#js}}
-    let cssDevModeStatus = 0;
-
-    /**
-     * Refresh the css in dev mode every 2000ms.
-     * @returns {void}
-     */
-    const cssDevMode = () =>{
-        if (cssDevModeStatus == 1) {
-            const link = document.querySelector('[data-region="devcss"]');
-            link.href = link.href.replace(/\?.*|$/, '?x=' + Date.now());
-            setTimeout(() => {
-                cssDevMode();
-            }
-            , 2000);
-        }
-    }
-    document.addEventListener('click', (e) => {
-        // Refresh the page css
-        if (e.target.closest('[data-action="refreshcss"]')) {
-                    window.console.log('click2');
-
-            const link = document.querySelector('[data-region="devcss"]');
-            link.href = link.href.replace(/\?.*|$/, '?x=' + Date.now());
-            if (link.dataset.on == 1) {
-                link.dataset.on = 0;
-                cssDevModeStatus = 0;
-                e.target.closest('[data-action="refreshcss"]').classList.remove('text-success');
-            } else {
-                link.dataset.on = 1;
-                cssDevModeStatus = 1;
-                cssDevMode();
-                e.target.closest('[data-action="refreshcss"]').classList.add('text-success');
-            }
-        }
-    });
-{{/js}}

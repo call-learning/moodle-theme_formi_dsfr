@@ -6,4 +6,9 @@
 }}
 <div id="nav-drawer" data-region="drawer" class="d-print-none" aria-hidden="false" tabindex="-1">
     {{> theme_boost/flat_navigation }}
+    {{#hasblocks}}
+        <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
+            {{{ sidepreblocks }}}
+        </section>
+    {{/hasblocks}}
 </div>

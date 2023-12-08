@@ -17,14 +17,14 @@
 /**
  * Plugin version and other meta-data are defined here.
  *
- * @package     theme_mentor
+ * @package     theme_formi_dsfr
  * @copyright   2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'theme_mentor';
+$plugin->component = 'theme_formi_dsfr';
 $plugin->release = '1.0.0';
 $plugin->version = 2022052700;
 $plugin->requires = 2018051700;

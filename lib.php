@@ -17,7 +17,7 @@
 /**
  * Callbacks
  *
- * @package     theme_mentor
+ * @package     theme_formi_dsfr
  * @copyright   2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -30,10 +30,10 @@ defined('MOODLE_INTERNAL') || die();
  * @param theme_config $theme
  * @return string
  */
-function theme_mentor_get_main_scss_content($theme) {
+function theme_formi_dsfr_get_main_scss_content($theme) {
     global $CFG;
     $scss = '';
-    $scss .= file_get_contents($CFG->dirroot . '/theme/mentor/scss/default.scss');
+    $scss .= file_get_contents($CFG->dirroot . '/theme/formi_dsfr/scss/default.scss');
     return $scss;
 }
 
@@ -43,7 +43,7 @@ function theme_mentor_get_main_scss_content($theme) {
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_mentor_get_extra_scss($theme) {
+function theme_formi_dsfr_get_extra_scss($theme) {
     return !empty($theme->settings->scss) ? $theme->settings->scss : '';
 }
 
@@ -52,7 +52,7 @@ function theme_mentor_get_extra_scss($theme) {
  *
  * @return string compiled css
  */
-function theme_mentor_get_precompiled_css() {
+function theme_formi_dsfr_get_precompiled_css() {
     global $CFG;
-    return file_get_contents($CFG->dirroot . '/theme/mentor/style/moodle.css');
+    return file_get_contents($CFG->dirroot . '/theme/formi_dsfr/style/moodle.css');
 }

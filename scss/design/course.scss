@@ -1,0 +1,36 @@
+.course-content ul.topics li.section .summary,
+.course-content ul.weeks li.section .summary,
+.course-content ul.topics li.section .content>.availabilityinfo,
+.course-content ul.weeks li.section .content>.availabilityinfo {
+    margin-left: 0;
+}
+.course-content ul li.section.main {
+    margin-top: 2rem;
+}
+
+// Frontpage Courses.
+.coursebox>.info>.coursename a {
+    background-image: none;
+    padding-left: 0;
+}
+
+.coursebox {
+    padding: 1rem 0 1rem 0;
+    border-top: 1px solid #eaeaea;
+    &:first-child {
+        border-top: none;
+        margin-top: 0;
+    }
+    .content .summary {
+        float: none;
+        width: 100%;
+    }
+}
+
+.courses .coursebox.even {
+    background-color: transparent;
+}
+
+&.path-course #region-main {
+    padding: 0;
+}

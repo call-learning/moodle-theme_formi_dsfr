@@ -15,14 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Privacy Subsystem implementation for theme_mentor.
+ * Privacy Subsystem implementation for theme_formi_dsfr.
  *
- * @package    theme_mentor
+ * @package    theme_formi_dsfr
  * @copyright  2023 Bas Brands <bas@sonsbeekmedia.nl>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_mentor\privacy;
+namespace theme_formi_dsfr\privacy;
 
 defined('MOODLE_INTERNAL') || die();
 

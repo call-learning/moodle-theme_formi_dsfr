@@ -1,0 +1,36 @@
+ul.nav-tabs {
+
+
+    @media (max-width: 767.98px) {
+        background-color: $white !important;
+    }
+
+    .nav-item {
+
+        .nav-link {
+            margin-left: 10px;
+            font-weight: 700;
+            background-color: var(--background-open-blue-france);
+            color: #161616;
+            border: 1px solid transparent;
+            margin-bottom: -1px;
+            border-bottom: 3px solid var(--background-open-blue-france);
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            &:hover {
+                background-color: var(--background-open-blue-france-hover);
+                border-bottom: 3px solid var(--background-open-blue-france-hover);
+            }
+
+            &.active {
+                background-color: $white;
+                border-color: var(--border-default-grey) var(--border-default-grey) $white;
+                border-top: solid 3px var(--background-action-high-blue-france);
+                border-bottom: 1px solid var(--border-default-grey);
+                box-sizing: content-box;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

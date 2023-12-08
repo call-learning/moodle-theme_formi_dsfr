@@ -1,0 +1,93 @@
+.que .info {
+    float: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--border-default-grey);
+    padding: 1rem;
+    font-size: 90%;
+
+    // Uses the first column and first row
+    h3 {
+        grid-column: 1 / span 1;
+        font-size: inherit;
+        margin-bottom: 0.5rem;
+    }
+    .grade {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    &>div {
+        margin: 0;
+        font-size: inherit;
+    }
+    .questionflag {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        text-align: right;
+    }
+    .editquestion {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        text-align: right;
+    }
+    .state {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    .questionflagimage {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+}
+.que .content {
+    margin-left: 0;
+}
+.que .formulation {
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+}
+.que {
+    border: 1px solid var(--border-default-grey);
+}
+.que .outcome {
+    border-radius: 0;
+    margin-bottom: 0;
+    .feedback {
+        margin-bottom: 0;
+    }
+}
+#mod_quiz_preflight_form {
+    fieldset {
+        margin: 1rem 0;
+        border: 0;
+        legend {
+            padding-left: 1rem !important;
+        }
+    }
+    .col-md-3 {
+        display: none;
+        padding: 0;
+    }
+    .col-md-9 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+    #fgroup_id_buttonar {
+        padding: 0 !important;
+    }
+    .fitem {
+        margin: 0 !important;
+    }
+    .btn {
+        margin-right: 0.5rem;
+    }
+}

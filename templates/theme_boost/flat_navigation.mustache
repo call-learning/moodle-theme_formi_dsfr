@@ -58,11 +58,11 @@
 <ul class="list-group unlist accordion">
 <li>
     <button class="btn list-group-item" type="button" data-toggle="collapse"
-        data-target="#first" aria-expanded="true" aria-controls="first">
-        {{firstcollectionlabel}}
+        data-target="#first" aria-expanded="{{#output.adminsectionactive}}false{{/output.adminsectionactive}}{{#output.adminsectionactive}}true{{/output.adminsectionactive}}" aria-controls="first">
+        {{{output.firstcollectionlabel}}}
     </button>
 </li>
-<nav id="first" class="collapse show" aria-label="{{firstcollectionlabel}}" data-parent=".accordion">
+<nav id="first" class="collapse {{^output.adminsectionactive}}show{{/output.adminsectionactive}}" aria-label="{{firstcollectionlabel}}" data-parent=".accordion">
     <ul class="list-group ml-3">
     {{# flatnavigation }}
         {{#showdivider}}
@@ -70,11 +70,11 @@
             </nav>
             <li>
                 <button class="btn list-group-item" type="button" data-toggle="collapse"
-                    data-target="#flatnavnav{{key}}" aria-expanded="false" aria-controls="flatnavnav{{key}}">
+                    data-target="#flatnavnav{{key}}" aria-expanded="{{#output.adminsectionactive}}true{{/output.adminsectionactive}}{{^output.adminsectionactive}}false{{/output.adminsectionactive}}" aria-controls="flatnavnav{{key}}">
                     {{get_collectionlabel}}
                 </button>
             </li>
-            <nav id="flatnavnav{{key}}" class="collapse" aria-label="{{get_collectionlabel}}" data-parent=".accordion">
+            <nav id="flatnavnav{{key}}" class="collapse {{#output.adminsectionactive}}show{{/output.adminsectionactive}}" aria-label="{{get_collectionlabel}}" data-parent=".accordion">
             <ul class="list-group unlist ml-3">
         {{/showdivider}}
         {{#action}}
