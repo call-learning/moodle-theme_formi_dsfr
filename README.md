@@ -1,14 +1,10 @@
 # theme_formi_dsfr #
 
-[![Build Status](https://travis-ci.com/bmbrands/moodle-theme_formi_dsfr.svg?token=apTVjT1niscpszV561WF&branch=main)](https://travis-ci.com/bmbrands/moodle-theme_formi_dsfr)
-
 The Formi Dsfr theme based on the Boost theme.
 
 Features:
 
-- a custom tenant system to display different styles and navigation based on cohorts
-- custom navigation to the different Formi Dsfr plugins
-- a simple way of adding images to that can be used to update course cards
+- Based on the DSFR design system
 
 ## License ##
 
