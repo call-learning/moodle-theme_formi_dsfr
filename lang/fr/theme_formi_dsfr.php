@@ -32,8 +32,9 @@ $string['choosereadme'] = 'Ce thème est un thème enfant de Boost.';
 $string['usernameemail_help'] = 'Format attendu: nom@domaine.rf';
 $string['cookiesnotice'] = 'Avis sur les cookies';
 $string['showpassword'] = 'Afficher';
-$string['footerlogotitle'] = 'Site du Ministère de la transformation et de la fonction publiques';
-
+$string['footerlogotitle'] = 'Site du Ministère de l\intérieur et des outre-mer';
+$string['footerlogo2title'] = 'SDFR Laboratoire digital - Conception et diffusion de formation digitales Formi, ' .
+'plateforme de formation en ligne Captutions audio et vidéo pédagogiques Films et animations';
 // Settings
 $string['about_desc'] = 'Lien vers la page "En savoir plus"';
 $string['about'] = 'En savoir plus';
