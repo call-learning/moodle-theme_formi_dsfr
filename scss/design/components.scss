@@ -248,3 +248,13 @@ div.dropdown-item {
         background-color: var(--background-action-high-blue-france-hover);
     }
 }
+
+.preferences-container .preference-table .preference-row .preference-state .preference-state-status-container {
+    width: 60px;
+    font-size: 0.7rem;
+}
+
+#region-main-settings-menu.has-blocks {
+    width: 100%;
+    display: block;
+}

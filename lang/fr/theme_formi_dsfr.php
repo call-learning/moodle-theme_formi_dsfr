@@ -58,5 +58,7 @@ $string['textinfofooter'] = 'Information';
 $string['textinfofooterdefault'] = 'Le programme Formi Dsfr est porté par la Direction générale de l\'administration et de la fonction publique (DGAFP)';
 $string['versionnumber_desc'] = 'Version du projet Formi Dsfr . Ce champs est en général rempli de manière automatique . ';
 $string['versionnumber'] = 'Version du projet Formi Dsfr';
+$string['loginbackground'] = 'Image d\'arrière-plan de connexion';
+$string['loginbackground_desc'] = '';
 
 $string['contact'] = 'Contact';

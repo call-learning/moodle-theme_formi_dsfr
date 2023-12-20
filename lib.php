@@ -44,7 +44,19 @@ function theme_formi_dsfr_get_main_scss_content($theme) {
  * @return string
  */
 function theme_formi_dsfr_get_extra_scss($theme) {
-    return !empty($theme->settings->scss) ? $theme->settings->scss : '';
+    $content = '';
+    $imageurl = $theme->setting_file_url('loginbackground', 'loginbackground');
+    // Sets the login background image.
+    if (!empty($imageurl)) {
+        $content .= 'body.path-login #page { ';
+        $content .= "background-image: url('$imageurl')";
+        $content .= '}';
+        $content .= 'body.path-login #page #region-main::before { ';
+        $content .= "background-image: none";
+        $content .= '}';
+    }
+
+    return !empty($theme->settings->scss) ? $theme->settings->scss . ' ' . $content : $content;
 }
 
 /**
@@ -70,7 +82,12 @@ function theme_formi_dsfr_get_precompiled_css() {
  * @return bool
  */
 function theme_formi_dsfr_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
-    if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'footerlogo' || $filearea === 'footerlogo2')) {
+    $fileareas = [
+        'footerlogo',
+        'footerlogo2',
+        'loginbackground',
+    ];
+    if ($context->contextlevel == CONTEXT_SYSTEM && (in_array($filearea, $fileareas))) {
         $theme = theme_config::load('formi_dsfr');
         // By default, theme files must be cache-able by both browsers and proxies.
         if (!array_key_exists('cacheability', $options)) {

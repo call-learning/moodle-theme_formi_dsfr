@@ -26,8 +26,8 @@
 <footer id="page-footer" role="contentinfo">
     <div class="start-footer">
         <div class="footer-inner row no-gutters pt-4 pb-3">
-            <div class="col-12 col-sm-3 col-md-2">
-                <ul class="footer-link unlist mx-4">
+            <div class="col-12 d-flex">
+                <ul class="footer-link horizontal">
                     {{# output.about_page }}
                         <li>
                             <a href="{{{ output.about_page }}}">{{#str}} about, theme_formi_dsfr {{/str}}</a>
@@ -45,9 +45,7 @@
                     {{/ output.faq_page }}
                     <li class="tool_usertours-resettourcontainer"></li>
                 </ul>
-            </div>
-            <div class="col-12 col-sm-3 col-md-2">
-                <div class="footer-link mx-4">
+                <div class="footer-link horizontal mb-3">
                     {{{ output.standard_footer_html }}}
                 </div>
             </div>

@@ -75,23 +75,24 @@
             margin-bottom: 1rem;
         }
     }
-    .tool_dataprivacy,
-    .purgecaches {
-        margin-bottom: 1rem;
-    }
     .footer-link.horizontal {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         a {
             font-size: 14px;
             font-weight: bold;
         }
 
+        & > div > a,
         li {
             font-weight: bold;
             list-style-type: none;
             margin: 0.5rem 1.5rem 0.5rem 0;
             white-space: nowrap;
+        }
+        li:last-child {
+            margin-right: 0;
         }
     }
 

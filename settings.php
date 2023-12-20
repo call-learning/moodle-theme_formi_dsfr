@@ -113,16 +113,7 @@ if ($ADMIN->fulltree) {
             get_string('footerlogo_desc', 'theme_formi_dsfr'),
             'footerlogo'
     );
-
-    // Footer logo left
-    $footerlogo = new admin_setting_configstoredfile(
-        'theme_formi_dsfr/footerlogo',
-        get_string('footerlogo', 'theme_formi_dsfr'),
-        get_string('footerlogo_desc', 'theme_formi_dsfr'),
-        'footerlogo'
-    );
-
-        // Footer logo right
+    // Footer logo right
     $footerlogo2 = new admin_setting_configstoredfile(
         'theme_formi_dsfr/footerlogo2',
         get_string('footerlogo2', 'theme_formi_dsfr'),
@@ -130,6 +121,13 @@ if ($ADMIN->fulltree) {
         'footerlogo2'
     );
 
+    // Login Background image.
+    $footerlogo = new admin_setting_configstoredfile(
+        'theme_formi_dsfr/loginbackground',
+        get_string('loginbackground', 'theme_formi_dsfr'),
+        get_string('loginbackground_desc', 'theme_formi_dsfr'),
+        'loginbackground'
+    );
 
     $settings->add($textinfofootersetting);
     $settings->add($aboutsetting);

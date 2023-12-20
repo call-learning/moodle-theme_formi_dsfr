@@ -43,6 +43,19 @@
     .navbar-brand {
         margin-left: 2.5rem;
     }
+    .logo img {
+        height: auto;
+        max-height: 80px;
+    }
+    @include media-breakpoint-down(lg) {
+        .navbar-nav .popover-region a.nav-link,
+        .popover-region-toggle.nav-link {
+            font-size: 0;
+        }
+        .usertext {
+            display: none;
+        }
+    }
 }
 .fr-logo {
     font-size: .7875rem;
