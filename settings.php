@@ -122,12 +122,13 @@ if ($ADMIN->fulltree) {
     );
 
     // Login Background image.
-    $footerlogo = new admin_setting_configstoredfile(
+    $loginbackground = new admin_setting_configstoredfile(
         'theme_formi_dsfr/loginbackground',
         get_string('loginbackground', 'theme_formi_dsfr'),
         get_string('loginbackground_desc', 'theme_formi_dsfr'),
         'loginbackground'
     );
+    $loginbackground->set_updatedcallback('theme_reset_all_caches');
 
     $settings->add($textinfofootersetting);
     $settings->add($aboutsetting);
@@ -140,4 +141,5 @@ if ($ADMIN->fulltree) {
     $settings->add($accessibilitysetting);
     $settings->add($footerlogo);
     $settings->add($footerlogo2);
+    $settings->add($loginbackground);
 }
