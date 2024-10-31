@@ -52,7 +52,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @throws moodle_exception
      */
     public function contact_page() {
-        return 'TODO';
+        return get_config('theme_formi_dsfr', 'contact');
     }
 
     /**

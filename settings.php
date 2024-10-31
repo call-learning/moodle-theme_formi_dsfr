@@ -61,6 +61,15 @@ if ($ADMIN->fulltree) {
             PARAM_URL
     );
 
+    // Contact.
+    $contactsetting = new admin_setting_configtext(
+        'theme_formi_dsfr/contact',
+        get_string('contact', 'theme_formi_dsfr'),
+        get_string('contact_desc', 'theme_formi_dsfr'),
+        $CFG->wwwroot . '/local/staticpage/view.php?page=contact',
+        PARAM_URL
+    );
+
     // Liens extérieur à Formi Dsfr.
     $externallinkssetting = new admin_setting_configtext(
             'theme_formi_dsfr/externallinks',
@@ -134,6 +143,7 @@ if ($ADMIN->fulltree) {
     $settings->add($aboutsetting);
     $settings->add($legalnoticesetting);
     $settings->add($faqsetting);
+    $settings->add($contactsetting);
     $settings->add($externallinkssetting);
     $settings->add($versionnumbersetting);
     $settings->add($formi_dsfrlicencesetting);
